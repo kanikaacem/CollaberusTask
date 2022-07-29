@@ -1,0 +1,102 @@
+.mainDiv{
+    .appHeading{
+        text-align:center;
+    }
+    .personDataDiv{
+        width: 80%;
+        margin: 0 auto;
+        height: calc(100vh - 200px);
+        padding:10px;
+
+        span{
+            display: flex;
+            align-items: center;
+            .resetImage{
+                width:25px;
+                cursor:pointer;
+            }
+        }
+
+        .searchBar{
+            padding:10px;
+            width:90%;
+            margin-right:20px;
+        }
+
+        .peopleTable{
+            display: table;
+            width: 100%;
+            height:100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+
+            .peopleTableRow{
+                .tableData{
+                    display:table-cell;
+                    width:100px;
+                    height:40px;
+                    border-bottom:1px solid black;
+                    text-align:center;
+                    
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .rowImage{
+                            width:20px;
+                            margin-right:20px;
+                            cursor:pointer;
+                            
+                            
+                            &.save{
+                                display:none ;
+                            }
+                        }
+                    }
+                    
+                  }
+                
+            }
+        }
+
+        .PaginationDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            .deleteAllButton{
+                border: none;
+                padding: 5px 10px;
+                background: red;
+                color: white;
+                margin-left:10px;
+                cursor:pointer;
+                position: absolute;
+                left: 150px;
+                border-radius: 20px;
+            }
+            .button{
+                    border: none;
+                    padding: 5px 10px;
+                    background: blue;
+                    color: white;
+                    margin-left:20px;
+                    cursor:pointer;
+                    border-radius:50%;
+            }
+            .active_button{
+                padding: 5px 10px;
+                background: white;
+                color: blue;
+                margin-left:20px;
+                cursor:pointer;
+                border-radius:50%;
+                border:1px solid blue;
+                transform: scale(1.2);
+        }
+        }
+    }
+
+
+}
